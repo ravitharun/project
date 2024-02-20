@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMOJI GENERATOR</title>
+</head>
+<script>
+
+    function random() {
+        const emm = ["🤩", "😎", "😍", "😡", "😀", "😀", "😅", "😍", "🥰", "🧐", " 🤪", "😝", "😛", "😋", "😚", " 🥳", "😏", "😩", "😩", " 🤔", " 😭", "😰", "😨", "😱", "😱", "🥶", "🥵", "🤖", "💀", "☠️", "😀", "😍", "😀", "😃", "🙂", "😇", "😊", "🙂", "🙃", "😉",
+            "😁", "😉", "🤔", "🤗", "🤗", "🤫", "🤭", "🤭", "😬", "🙄", "😵", "🥴", "😪", "🤒", "🤒", "🤑", "😪", "😷", "🤧", "🤮", "🤢", "😲", "😴", "🥱", "😯",]
+        let em = [Math.floor(Math.random() * emm.length)]
+        let emoji = document.getElementById('emoji').innerHTML = emm[em];
+
+    }
+    function angry() {
+        document.getElementById("emoji").innerHTML = "😡"
+    }
+    function love() {
+        document.getElementById("emoji").innerHTML = "😍"
+    }
+    function happy() {
+        document.getElementById("emoji").innerHTML = "😀"
+    }
+    function sad() {
+        document.getElementById("emoji").innerHTML = "😭"
+    }
+
+</script>
+<style>
+    body {
+        background-color: rgb(244, 222, 222);
+    }
+
+    .outer {
+        /* border: 2px solid green; */
+        padding: 60px;
+        width: max-content;
+        position: absolute;
+        background-color: aqua;
+        border-radius: 25px;
+        box-shadow: -10px -20px 300px rgb(228, 211, 211);
+        top: 50%;
+        left: 50%;
+        border:none;
+        transform: translate(-122px, -200px);
+
+    }
+
+
+    #emoji {
+        /* border: 2px solid; */
+        height: 100px;
+        padding: 100px 100px 100px;
+        margin: 25px;
+        width: 100px;
+        font-size: 3.3rem;
+        justify-content: center;
+        border-radius: 25px; 
+        animation-timing-function: ease-in-out;
+        transform: translateX(20px);
+    }
+    #emoji:hover{
+        cursor: pointer;
+        transform: translateY(20px);
+      
+    }
+
+    button {
+        display: inline-block;
+        background: transparent;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        color: red;
+        background-color: antiquewhite;
+        border: none;
+        width: 72px;
+    }
+
+    button:hover {
+        border: 3px solid gold;
+        cursor: pointer;
+        color: blue;
+
+
+    }
+
+    @media (max-width:1000px) {
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        div button {
+            margin: auto;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="outer">
+        <h1>EMOJI GENERATOR</h1>
+        <div id="emoji" onclick="download()">
+        </div>
+        <div>
+            <button onclick="happy()" value="happy" id="eml">Happy</button>
+            <button onclick="sad()" value="sad" id="sad">Sad</button>
+            <button onclick="angry()" value="angry" id="angry">Angry</button>
+            <button onclick="love()" value="Love" id="lovee">Love</button>
+            <button onclick="random()">Random</button>
+        </div>
+    </div>
+</body>
+
+</html>
