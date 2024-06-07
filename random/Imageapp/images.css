@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#div1 {
+  padding: 20px 10px 5px;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+  font-family: math;
+}
+
+form {
+  text-align: center;
+  padding: 5px;
+}
+
+input {
+  padding: 4px;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 5px;
+  background: transparent;
+}
+
+button:hover {
+  /* background: transparent; */
+  color: white;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+}
+#images {
+  margin-left: 7%;
+}
+img {
+  border-radius: 20px;
+  /* border: 1px solid gray; */
+  cursor: pointer;
+  width: 20%;
+  height: 25%;
+  display: inline;
+  margin-left: 100px;
+  margin: 10px;
+  aspect-ratio: 3/2;
+}
+img:hover {
+  transform: scale(1);
+}
+.loadmore {
+  text-align: center;
+}
+#loadmore {
+  display: none;
+}
+#btn {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  padding: 0px;
+  cursor: pointer;
+  margin-left: 25%;
+  width: 50%;
+}
+#btn:hover {
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e80404;
+}
+@media (max-width: 786px) {
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #08ceff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d164c8;
+}
+  img {
+    border: none;
+    width: 100%;
+    padding: 8px;
+    margin: -1px;
+    border-radius: 5px;
+    margin: 0px -21px;
+  }
+
+  input {
+    width: 50%;
+    padding: 4px;
+    font-size: 15px;
+    color: black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  button {
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: aqua;
+  }
+
+  #load {
+    width: 75%;
+  }
+}
