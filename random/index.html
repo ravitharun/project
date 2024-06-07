@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="colorshow"></div>
+    <div>
+        <form action="">
+            <input type="text" id="guesscolors">
+        </form>
+        <button onclick="colr()">Guess Color</button>
+    </div>
+
+    <script>
+        let score = 0; // Declare score variable outside the function to retain its value
+
+        function colr() {
+            const clr =
+                [
+                    "red",
+                    "green",
+                    "blue",
+                    "purple",
+                    "yellow",
+                    "orange",
+                    "black",
+                    "white",
+                    "gray",
+                    "pink",
+                    "brown",
+                    "teal",
+                    "navy",
+                    "olive",
+                    "maroon",
+                    "lime",
+                    "fuchsia",
+                    "aqua",
+                    "crimson",
+                    "indigo",
+                    "turquoise",
+                    "silver",
+                    "gold",
+                    "magenta",
+                    "violet",
+                    "chartreuse",
+                    "salmon",
+                    "khaki",
+                    "lavender",
+                    "coral",
+                    "tomato",
+                    "plum",
+                    "chocolate",
+                    "wheat",
+                    "tan",
+                    "beige",
+                    "cyan",
+                    "darkblue",
+                    "darkgreen",
+                    "darkred",
+                    "darkorange",
+                    "darkviolet",
+                    "darkgray",
+                    "lightskyblue",
+                    "lightgreen",
+                    "lightyellow",
+                    "lightcoral",
+                    "lightpink",
+                    "lightsalmon",
+                    "lightblue",
+                    "lightgray",
+                    "mistyrose",
+                    "moccasin",
+                    "papayawhip",
+                    "peachpuff",
+                    "seashell",
+                    "cornsilk",
+                    "blanchedalmond",
+                    "floralwhite",
+                    "snow",
+                    "linen",
+                    "aliceblue",
+                    "antiquewhite",
+                    "bisque",
+                    "ivory",
+                    "lavenderblush",
+                    "oldlace",
+                    "whitesmoke",
+                    "mintcream",
+                    "ghostwhite",
+                    "honeydew",
+                    "azure",
+                    "palegoldenrod",
+                    "khaki",
+                    "lightyellow",
+                    "beige",
+                    "darkkhaki",
+                    "goldenrod",
+                    "saddlebrown",
+                    "darkgoldenrod",
+                    "peru",
+                    "burlywood",
+                    "sandybrown",
+                    "chocolate",
+                    "darkred",
+                    "maroon",
+                    "firebrick",
+                    "indianred",
+                    "darkorange",
+                    "tomato",
+                    "coral",
+                    "orangered",
+                    "darkorchid",
+                    "mediumvioletred",
+                    "deeppink",
+                    "hotpink",
+                    "pink",
+                    "lightpink",
+                    "paleturquoise",
+                    "mediumturquoise",
+                    "turquoise",
+                    "darkturquoise",
+                    "steelblue",
+                    "royalblue",
+                    "blue",
+                    "mediumblue",
+                    "darkblue",
+                    "navy"
+                ]
+
+            let colorshow = document.getElementById("colorshow");
+            let color = Math.floor(Math.random() * clr.length);
+            let guesscolors = document.getElementById("guesscolors").value;
+            document.body.style.backgroundColor = clr[color];
+
+            if (clr[color] === guesscolors) {
+                score++;
+            } else {
+                score--;
+            }
+            colorshow.innerHTML = "Score: " + score;
+        }
+    </script>
+</body>
+
+</html>
