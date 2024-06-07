@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Avatar</title>
+</head>
+
+<style>
+    div {
+        /* border: 1px solid #000; */
+        padding: 20px;
+        text-align: center;
+        width: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        width: 10%;
+    }
+
+    .card {
+        border: 1px solid #000;
+        max-width: 300px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    button {
+        border: none;
+        padding:
+            9px;
+        width: auto;
+        background-color: blue;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: oblique;
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    button:hover {
+        background: none;
+        color: green;
+    }
+
+    @media (max-width: 600px) {
+        .card {
+            max-width: 80%;
+        }
+    }
+</style>
+
+<body>
+    <div>
+
+        <div id="container"></div> <!-- Container for the image -->
+        <div>
+            <a href="" id="click" target="_blank"></a>
+        </div>
+        <button onclick="check()">Check GitHub Profile</button>
+    </div>
+    <script>
+        function check() {
+            let user = prompt("Enter your GitHub username");
+            console.log(user)
+            if (user == null) {
+                alert("FILL THE GITHUB NAME ")
+
+            }
+            else {
+                let url = `https://api.github.com/users/${user}`;
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        let avatar_url = data.avatar_url;
+                        let img = document.createElement('img');
+                        img.src = avatar_url;
+                        let container = document.getElementById('container');
+                        container.appendChild(img);
+
+                        let link = document.getElementById('click');
+                        link.href = data.html_url;
+                        link.innerHTML = link.href;
+                    })
+                    .catch(error => console.error('Error fetching data:', error));
+            
+            }
+        }
+    </script>
+</body>
+
+</html>
