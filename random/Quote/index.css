@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(106deg, palegoldenrod, aqua);
+}
+div {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  color: orange;
+}
+#author {
+    font-size: 1.7rem;
+  color: orange;
+}
+p {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.7rem;
+  color: black;
+}
+p:hover {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+button {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: transparent;
+  background: black;
+  color: white;
+  border: none;
+}
