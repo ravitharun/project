@@ -1,0 +1,36 @@
+div {
+  border: 1px solid #000;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: orange;
+}
+b {
+  color: red;
+}
+p {
+  color: green;
+  font-family: cursive;
+}
+#displayValue {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  font-family: cursive;
+  border-radius: 13px;
+}
+input {
+  text-align: center;
+  width: 100px;
+}
+#colordisplay {
+  border: none;
+  padding: 50px;
+  width: 20px;
+  margin: 20px;
+}
