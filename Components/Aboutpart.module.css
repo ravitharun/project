@@ -1,0 +1,11 @@
+.div{
+    border: 2px solid red;
+    border-radius: 20px;
+    width: auto;
+}
+h1{
+    color: red;
+}
+p{
+    color: green;
+}
