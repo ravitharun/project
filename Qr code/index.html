@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR CODE SCAN IT</title>
+  </head>
+  <script>
+    function show() {
+      event.preventDefault();
+      let text = document.getElementById("text").value;
+      console.log(text);
+      let url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${text}`;
+
+      fetch(url)
+        .then((response) => response.blob())
+        .then((blob) => {
+          let imgUrl = URL.createObjectURL(blob);
+          let img = document.createElement("img");
+          img.src = imgUrl;
+          document.body.appendChild(img);
+          document.getElementById("note").innerHTML = "<i> SCAN IT </i>";
+          document.getElementById("impnote").innerHTML =
+            "<i>  📝 REFRESH THE PAGE WHILE YOU GOING TO NEXT ONE  </i>";
+        });
+    }
+  </script>
+  <style>
+    div {
+      padding: 20px;
+      text-align: center;
+    }
+
+    form input {
+      padding: 6px;
+      font-size: 1.2rem;
+    }
+
+    img {
+      margin-left: 46%;
+    }
+
+    img:hover {
+      cursor: pointer;
+    }
+
+    button {
+      padding: 5px;
+      background: none;
+      cursor: pointer;
+      width: 100px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    button:hover {
+      border: none;
+      background-color: red;
+      color: white;
+    }
+    #note:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+
+    #impnote {
+      color: red;
+      font-family: cursive;
+      font-size: x-large;
+    }
+  </style>
+
+  <body>
+    <div>
+      <h2>QR Code Generator</h2>
+      <p id="impnote"></p>
+      <form>
+        <input type="text" id="text" value="google.com" required autofocus />
+        <br />
+        <br />
+        <button onclick="show()">Show</button>
+      </form>
+      <p id="note"></p>
+    </div>
+  </body>
+</html>
