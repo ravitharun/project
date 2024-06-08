@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="TODO.CSS">
+    <script src="TODO.JS"></script>
+</head>
+
+<body>
+
+    <div class="parent_div">
+        <div class="child_div">
+            <h1>TO-DO LIST📝</h1>
+            <form onsubmit="add_todo(event)">
+                <input type="text" id="todo_text" placeholder="Enter Todo" required />
+                <input type="date" id="todo_date" required />
+                <button type="submit">Add Todo</button>
+            </form>
+            <button onclick="clearAllTodos()">Clear All</button>
+            <ul id="store_todo"></ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
