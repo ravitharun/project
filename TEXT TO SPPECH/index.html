@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT TO SPEECH</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        color: orange;
+        font-family: cursive;
+        font-style: oblique;
+    }
+
+    div {
+        margin-top: 50px;
+        text-align: center;
+        border: 1px solid #000;
+        padding: 50px;
+
+    }
+
+    textarea {
+        margin: 10px;
+        font-size: 1.2rem;
+        width: 500px;
+        height: 200px;
+
+    }
+
+    button {
+        padding: 5px;
+        width: 100px;
+        font-size: 15px;
+    }
+
+    button:hover {
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+</style>
+<script>
+    function speak() {
+        if ('speechSynthesis' in window) {
+            let TEXT = document.getElementById("TEXT").value;
+            const utterance = new SpeechSynthesisUtterance(TEXT);
+
+            window.speechSynthesis.speak(utterance);
+
+        }
+        else {
+            alert("Sorry, your browser does not support speech synthesis.")
+
+        }
+
+
+    }
+</script>
+
+<body>
+    <div>
+        <h2>Text To Speech</h2>
+        <textarea id="TEXT" placeholder="ENTER YOUR TEXT" title="ENTER THE TEXT" autofocus></textarea>
+        <br><br>
+        <button onclick="speak()"> Speech</button>
+    </div>
+</body>
+
+</html>

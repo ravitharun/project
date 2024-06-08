@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: orange;
+  font-family: cursive;
+  font-style: oblique;
+}
+
+div {
+  margin-top: 50px;
+  text-align: center;
+  padding: 50px;
+}
+
+textarea {
+  margin: 10px;
+  font-size: 1.2rem;
+  width: 500px;
+  height: 200px;
+}
+
+button {
+  padding: 5px;
+  width: 100px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1000px) {
+  body {
+    background-color: rgb(234, 246, 246);
+  }
+  h2{color: orangered;}
+  textarea {
+    width: auto;
+  }
+}
