@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <form onsubmit="game(event)">
+        <label for="guess_Number">Guess a number (1-10):</label>
+        <input type="number" id="guess_Number" min="1" max="10" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="msg"></p>
+    <p>Your score: <span id="score">0</span></p>
+
+    <script src="game.js"></script>
+</body>
+</html>
