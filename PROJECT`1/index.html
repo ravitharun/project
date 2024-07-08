@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER WEBSITE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="parentdiv">
+        <div class="childdiv">
+            <h1>WEATHER APP</h1>
+            <form onsubmit="showweather(event)">
+                <input type="text" name="cityName" placeholder="Enter city name" spellcheck="true" id="cityName"
+                    required>
+                <button type="submit">GET WEATHER</button>
+            </form>
+            <div class="weatherdetails" id="weatherDetails">
+                <h3 id="cityNameDisplay">PUNE</h3>
+                <h4 id="latlong"></h4>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.n6-tbSLDFYMwCNmHgWK4zQHaEo&pid=Api&P=0&h=180"
+                    alt="current image" id="weatherImage">
+                <p id="degree">26 °C</p>
+                <p id="weatherCondition">HAZE</p>
+                <p id="windSpeed">WIND SPEED: 3.12 M/S</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
