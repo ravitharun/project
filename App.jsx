@@ -1,9 +1,12 @@
-import Count from "./Componentes/Count";
+import Btn from "./Components/Btn";
 
 function App() {
   return (
     <>
-      <Count />
+      <center>
+        <h1>calculator using <i>REACT</i> </h1>
+        <Btn></Btn>
+      </center>
     </>
   );
 }
