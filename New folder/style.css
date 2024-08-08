@@ -1,0 +1,301 @@
+
+    .Home {
+        padding: 20px;
+        height: 50vh;
+        background-color: rgb(190, 246, 246);
+    }
+.typed{
+    font-size: 1.2rem;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+}
+    .name {
+        color: orange;
+        font-family: monospace;
+    }
+
+    .btn:hover {
+        background-color: white;
+        border: none;
+        letter-spacing: 2px;
+        color: black;
+    }
+
+    .homeheader {
+        margin-top: 100px;
+
+        text-align: center;
+    }
+
+    .role {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+
+    }
+
+    .role:hover {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    img {
+        border-radius: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+
+    h3 {
+        text-align: center;
+        /* margin-top: 20px; */
+        color: purple;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3:hover {
+        text-decoration: underline;
+
+    }
+
+    .continer {
+        /* border: 1px solid #000; */
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .content1 {
+        color: red;
+    }
+
+    .content2 {
+        color: rgb(71, 30, 124);
+    }
+
+    .content3 {
+        color: rgb(31, 186, 200);
+    }
+
+    .content4 {
+        color: rgb(0, 0, 0);
+    }
+
+    .content5 {
+        color: rgb(14, 3, 3);
+    }
+
+    .projects {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .projets2 {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        /* border: 1px solid #000; */
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .card1 {
+        width: 30%;
+        border: 1px solid #000;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+
+    }
+
+    P {
+        color: orange;
+        font-family: monospace;
+    }
+
+    .PROGESS1 {
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+
+    .card1:hover {
+        box-shadow: 7px 10px 51px 0px rgba(31, 237, 76, 0.75);
+        -webkit-box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        -moz-box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        border: none;
+        filter: blur(0px);
+        background-color: rgb(197, 237, 224);
+
+    }
+
+    .project1 {
+        color: blueviolet;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .project1:hover {
+        color: rgb(51, 54, 53);
+    }
+
+    .tittle1 {
+        color: tomato;
+    }
+
+    .tittle1:hover {
+        text-decoration: underline;
+    }
+
+    .tittle2 {
+        color: blue;
+    }
+
+    .tittle2:hover {
+        text-decoration: underline;
+    }
+
+    .tittle3 {
+        color: green;
+    }
+
+    .tittle3:hover {
+        text-decoration: underline;
+    }
+
+    .tittle4 {
+        color: orangered;
+    }
+
+    .tittle4:hover {
+        text-decoration: underline;
+    }
+
+    .card2 {
+        /* filter: blur(1px);
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px); */
+        width: 30%;
+        border: 1px solid #000;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card2:hover {
+        box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        -webkit-box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        -moz-box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        border: none;
+        filter: blur(0px);
+        background-color: rgb(197, 237, 224);
+        transform: scale(1.1);
+    }
+
+    .card3:hover {
+        box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        -webkit-box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        -moz-box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        border: none;
+        filter: blur(0px);
+        background-color: rgb(197, 237, 224);
+    }
+
+    .card4:hover {
+        box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        -webkit-box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        -moz-box-shadow: 7px 10px 51px 0px rgba(31, 76, 237, 0.75);
+        border: none;
+        filter: blur(0px);
+        background-color: rgb(197, 237, 224);
+    }
+
+    .card3 {
+        width: 30%;
+        text-align: center;
+        text-wrap: wrap;
+        border: 1px solid #000;
+        padding: 20px;
+    }
+
+    .card4 {
+        width: 30%;
+        border: 1px solid #000;
+        text-align: center;
+        padding: 20px;
+    }
+
+    a {
+        text-align: center;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    .moreproject {
+        padding: 20px;
+        text-align: center;
+    }
+
+    label {
+        color: rgb(72, 0, 255);
+        font-family: cursive;
+        letter-spacing: 2px;
+    }
+
+    @media (max-width:1000px) {
+        .homeheader {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .continer {
+            display: grid;
+            gap: 20px;
+        }
+
+        .moreproject {
+            font-family: cursive;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-family: cursive;
+        }
+
+        .projects {
+            display: grid;
+            gap: 20px;
+        }
+
+        .projets2 {
+            display: grid;
+            gap: 20px;
+        }
+
+        .card1 {
+            width: 100%;
+        }
+
+        .card2 {
+            width: 100%;
+        }
+
+        .card3 {
+            width: 100%;
+        }
+
+        .card4 {
+            width: 100%;
+        }
+
+    }
+
