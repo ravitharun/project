@@ -40,6 +40,10 @@ function Form() {
         console.log(responseData.data.message);
         if (responseData.data.message === "Login successful") {
           alert("Login successful");
+setFname("")
+setLname("")
+setemail("")
+setpassword ("")
         } else {
           alert("FAILED TO LOGIN");
         }
